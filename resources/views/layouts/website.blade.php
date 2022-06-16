@@ -41,7 +41,7 @@
         </div>
     </section>
     <section class="sticky-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white py-0">
+        <nav class="navbar navbar-expand-lg navbar-light py-0">
             <div class="container-fluid my-container">
                 <a class="navbar-brand" href="{{ route('home') }}"><img style="height: 50px; border-radius:4%" src="{{ asset($content->logo) }}" alt="">
                         
@@ -109,8 +109,8 @@
                                 <li><a href="{{ route('home') }}">Home</a></li>
                                 <li><a href="{{ route('website.about') }}">About</a></li>
                                 <li><a href="{{ route('website.gallery') }}">Gallery</a></li>
-                                <li><a href="{{ route('website.committee') }}">Management
-                                </a></li>
+                                {{-- <li><a href="{{ route('website.committee') }}">Management
+                                </a></li> --}}
                                
                                 <li><a href="{{ route('contact') }}">Contact Us</a></li>
                                

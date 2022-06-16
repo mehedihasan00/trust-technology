@@ -5,7 +5,7 @@
     padding: 0;
 }
 .bg-header-top{
-    background-color: #5e5b62;
+    background-color: #343434;
     scroll-behavior: smooth;
 }
 
@@ -15,6 +15,12 @@ html {
 }
 body {
     font-family: 'Lato', sans-serif;
+}
+a {
+    color: #6e44bd;
+}
+a:hover {
+    color: #745ba3;
 }
 #typed{
     font-size: 24px;
@@ -46,6 +52,12 @@ li, a {
     font-size: 30px;
     font-weight: 700;
     color:#09d2f8
+}
+.sticky-top {
+    background: #00a3c1;
+}
+.navbar-light {
+    background: #00a3c1;
 }
 .navbar-light .navbar-nav .nav-item {
     border-bottom: 1px solid transparent;
@@ -137,14 +149,14 @@ section.py-5.about-section {
 
 
 .section-title h2::after {
-    content: '*****';
+    content: '!!!!!';
     top: 0px;
     position: absolute;
     top: 4px;
     margin-left: 10px;
 }
 .section-title h2::before {
-    content: '*****';
+    content: '!!!!!';
     top: 0px;
     position: absolute;
     top: 4px;
@@ -341,14 +353,15 @@ section.py-5.about-section {
 
 
 .footer-area {
-    background: rgb(35 35 35 / 90%);
+    /* background: rgb(35 35 35 / 90%); */
+    background-color: #00a3c1;
     padding: 30px 0px;
     color: #fff;
 }
   
 
 .footer-botttom {
-    background: #1F2732;
+    background: #00a3c1;
     color: #fff;
 }
 
@@ -647,7 +660,7 @@ div#carouselExampleCaptions {
     overflow: hidden;
 }
 section.footer-botttom.border-top.py-1 {
-    background: #000;
+    background: #343434;
     color: white;
 }
 
