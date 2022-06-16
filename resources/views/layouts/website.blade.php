@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="assets/image/logo.png" type="image/gif" sizes="16x16">
     <title>{{ $content->name }} | @yield('title')</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Lato:wght@100;300;400;700;900&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('content/website/css/all.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('content/website/css/simple-lightbox.min.css') }}" />
     <link rel="stylesheet" href="{{ asset('content/website/css/owl.carousel.min.css')}}" />
@@ -54,26 +56,26 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 250px;">
-                        <li class="nav-item">
+                        <li class="nav-item {{ $pageName == 'home' ? 'active' : ''}}">
                             <a class="nav-link" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $pageName == 'about' ? 'active' : '' }}">
                             <a class="nav-link link" href="{{ route('website.about') }}">About Us</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{ $pageName == 'product' ? 'active' : '' }}">
                             <a class="nav-link link" href="{{ route('website.products') }}">Products</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link link" href="{{ route('website.gallery') }}">Photo Gellary</a>
+                        <li class="nav-item {{ $pageName == 'gallery' ? 'active' : '' }}">
+                            <a class="nav-link link" href="{{ route('website.gallery') }}">Photo Gallery</a>
                         </li> 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link link" href="{{ route('website.committee') }}">Managment</a>
-                        </li>
+                        </li> --}}
                        
-                        <li class="nav-item">
+                        <li class="nav-item {{ $pageName == 'news' ? 'active' : '' }}">
                             <a class="nav-link link" href="{{ route('website.news') }}">News</a>
                         </li> 
-                        <li class="nav-item">
+                        <li class="nav-item {{ $pageName == 'contact' ? 'active' : '' }}">
                             <a class="nav-link link" href="{{ route('contact') }}">Contact Us</a>
                         </li>
                     </ul>
@@ -147,11 +149,11 @@
                 <div class="row">
                    
                     <div class="col-lg-6 col-md-6 col-12 vertical-align center-align">
-                        <p class="mb-0 py-2">Copyright © 2021  all rights reserved <a href="" target="_blank">{{$content->name}}</a></p>
+                        <p class="mb-0 py-2">Copyright © 2022  all rights reserved <a href="" target="_blank">{{$content->name}}</a></p>
                        
                     </div>
                     <div class="col-12 col-lg-6 col-md-6  vertical-align justify-content-end center-align">
-                        Desing and Develop &nbsp;  <a href="http://linktechbd.com/" target="_blank"> Link-Up Technology</a>
+                        Designed and Developed By &nbsp;  <a href="http://linktechbd.com/" target="_blank"> Link-Up Technology</a>
                     </div>
                 </div>
             </div>

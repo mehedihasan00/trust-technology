@@ -1,4 +1,7 @@
-@extends('layouts.website') @section('website-contents') @section('title', 'Register') @push('website-css') @endpush
+@extends('layouts.website', ['pageName' => 'contact']) 
+@section('website-contents') 
+@section('title', 'Register')
+ @push('website-css') @endpush
 <section class="pager">
     <div class="container pager-text py-5">
         <h3 class="text-center text-white fw-bold">Contact Us</h3>
@@ -14,7 +17,7 @@
                 </div>
                 @if(Session('status'))
                 <div class="alert-success alert fw-bold p-2" role="alert">
-                    Submit Your Message
+                    Submitted Your Message
                 </div>
                 @endif
                 <form action="{{ route('contact.store') }}" method="post">
@@ -31,7 +34,7 @@
                         </div>
                         <div class="col-6">
                             <span class="">Phone<span class="text-danger">*</span></span>
-                            <input type="text" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" name="phone" placeholder="Type Your Phone Number" aria-label="Server" />
+                            <input type="tel" class="form-control @error('phone') is-invalid @enderror" value="{{ old('phone') }}" name="phone" placeholder="Type Your Phone Number" aria-label="Server" />
                             @error('phone')
                             <span class="invalid-feedback" role="alert">
                                 <strong>{{ $message }}</strong>

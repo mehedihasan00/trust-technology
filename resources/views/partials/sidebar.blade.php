@@ -32,7 +32,7 @@
                             <nav class="sb-sidenav-menu-nested nav">
                                 <a class="nav-link" href="{{ route('management.index') }}">Management</a>
                                 
-                                <a class="nav-link" href="{{ route('gallery.index') }}">Gellary</a>
+                                <a class="nav-link" href="{{ route('gallery.index') }}">Gallery</a>
                                 <a class="nav-link" href="{{ route('banner.index') }}">Slider</a>
                                 <a class="nav-link" href="{{ route('video.index') }}">Video</a>
                             </nav>

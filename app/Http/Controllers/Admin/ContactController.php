@@ -19,7 +19,8 @@ class ContactController extends Controller
         $request->validate([
             'name' => 'required|string|max:100',
             'email' => 'required|max:50',
-            'phone' => 'required|regex:/^01[13-9][\d]{8}$/|min:11',
+            'phone' => 'required'
+            // 'phone' => 'required|regex:/^01[13-9][\d]{8}$/|min:11',
            
         ]);
 

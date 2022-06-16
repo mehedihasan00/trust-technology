@@ -5,7 +5,7 @@
     padding: 0;
 }
 .bg-header-top{
-    background-color: #6dbd44;
+    background-color: #5e5b62;
     scroll-behavior: smooth;
 }
 
@@ -13,13 +13,17 @@ html {
     scroll-behavior: smooth;
    
 }
+body {
+    font-family: 'Lato', sans-serif;
+}
 #typed{
-    font-size: 35px;
-    color:#6DBD44;
+    font-size: 24px;
+    color: #6e44bd;
+    /* color:#6e44bd; */
 }
 section.sticky-top {
     /* border-bottom: 1px solid #ec4148; */
-    box-shadow: 0 0 2px 0 #6dbd44;
+    box-shadow: 0 0 2px 0 #6e44bd;
     height: 65px;
 }
 .card-body {
@@ -43,11 +47,24 @@ li, a {
     font-weight: 700;
     color:#09d2f8
 }
+.navbar-light .navbar-nav .nav-item {
+    border-bottom: 1px solid transparent;
+}
+.navbar-light .navbar-nav .nav-item.active {
+    color: #6e44bd;;
+    border-bottom: 1px solid #6e44bd;;
+}
+.navbar-light .navbar-nav .nav-item.active .nav-link {
+    color: #6e44bd;;
+}
+.navbar-light .navbar-nav .nav-item:hover {
+    border-bottom: 1px solid #6e44bd;
+} 
 .navbar-light .navbar-nav .nav-link {
     color: #000;
     padding-right: .5rem;
     padding-left: .5rem;
-    font-weight: 400;
+    font-weight: 600;
 }
 .header-social {
     margin: 0;
@@ -63,11 +80,11 @@ section.py-5.about-section {
     background: #fafafa;
 }
 .header-social li a:hover, .quick-menu ul li a:hover {
-    color: #6DBD44;
+    color: #6e44bd;
     transition: .3s;
 }
 .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-    color: #6DBD44;
+    color: #6e44bd;
 }
 
 .nav-link.active {
@@ -103,7 +120,7 @@ section.py-5.about-section {
     font-weight: bold;
     text-transform: capitalize;
     position: relative;
-    color: #6dbd44;
+    color: #6e44bd;
 }
 
 
@@ -194,12 +211,12 @@ section.py-5.about-section {
 /* about css */
 
 .about-btn {
-    background: #6dbd44;
+    background: #6e44bd;
     padding: 6px 20px;
     border-radius: 40px;
     color: #fff;
     margin-top: 5px;
-    border: 1px solid #6dbd44;
+    border: 1px solid #6e44bd;
     display: inline-block;
 }
 
@@ -297,10 +314,10 @@ section.py-5.about-section {
 }
 
 .inner-page-header h4 {
-    color: #6dbd44;
+    color: #6e44bd;
     margin: 0 0 -2px 0;
     padding-bottom: 5px;
-    border-bottom: 2px solid #6dbd44;
+    border-bottom: 2px solid #6e44bd;
     display: inline-block;
 }
 /* contact icon */
@@ -552,7 +569,7 @@ svg.svg-inline--fa.fa-hand-point-right.fa-w-16 {
     border-radius: 50%;
 }
 a.btn.read-more {
-    background: #6DBD44;
+    background: #6e44bd;
     color: #fff;
 }
 a.btn.read-more:hover{
@@ -655,6 +672,6 @@ section.footer-botttom.border-top.py-1 {
     }
     #typed{
         font-size: 29px;
-        color: #6DBD44;
+        color: #6e44bd;
     }
 }

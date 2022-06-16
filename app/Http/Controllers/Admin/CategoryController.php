@@ -18,6 +18,7 @@ class CategoryController extends Controller
     public function index()
     {
         $category = Category::latest()->get();
+        // return view('admin.category.index', compact('category'));
         return view('admin.category.index', compact('category'));
     }
 
@@ -120,8 +121,7 @@ class CategoryController extends Controller
 
         if($category){
             Session::flash('status', 'Category updated successfully');
-            return redirect()->route('category.index
-            ');
+            return redirect()->route('category.index');
         }else{
             Session::flash('error', '!Opps Category updated fail');
             return back();

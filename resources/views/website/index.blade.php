@@ -1,4 +1,4 @@
-@extends('layouts.website')
+@extends('layouts.website', ['pageName' => 'home'])
 @section('website-contents')
 @section('title', 'Home')
 @push('website-css')
@@ -8,7 +8,7 @@
      <section class="category-section">
         <div class="container-fluid my-container">
             <div class="row">
-                <div class="col-md-3">
+                {{-- <div class="col-md-3">
                     <div class="mobile-menu">
                         <h3 class="category">Category<i class="fas fa-bars menu-icon"></i></h3>
                     </div>
@@ -23,9 +23,8 @@
                         <li  class="more-category" style="overflow: hidden"><a href="#">@if($categorylast == true)More @endif  <i class="fas fa-plus"></i></a></li>
                         
                     </ul>
-                </div>
-                <div class="col-md-9 my-slider">
-                    
+                </div> --}}
+                <div class="col-md-12 col-12 my-slider">
                         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 @php
@@ -133,7 +132,7 @@
     <!-- Gallery section End -->
 
 
-    <!-- Team section Start -->
+    {{-- <!-- Team section Start -->
     <section class="py-4">
         <div class="container">
             <div class="section-title text-center">
@@ -160,7 +159,7 @@
                 @endforeach  
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="py-4 bg-light">
         <div class="container">

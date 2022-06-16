@@ -1,4 +1,4 @@
-@extends('layouts.website')
+@extends('layouts.website', ['pageName' => 'news'])
 @section('website-contents')
 @section('title', 'About-us')
 @push('website-css')

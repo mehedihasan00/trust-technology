@@ -1,4 +1,4 @@
-@extends('layouts.website') 
+@extends('layouts.website', ['pageName' => 'register']) 
 @section('website-contents') 
 @section('title', 'Register')
 @push('website-css') 

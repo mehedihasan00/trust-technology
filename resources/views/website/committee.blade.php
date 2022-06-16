@@ -1,4 +1,4 @@
-@extends('layouts.website')
+@extends('layouts.website', ['pageName' => 'committee'])
 @section('website-contents')
 @section('title', 'Management')
 @push('website-css')

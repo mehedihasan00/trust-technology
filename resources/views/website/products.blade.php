@@ -1,4 +1,4 @@
-@extends('layouts.website')
+@extends('layouts.website', ['pageName' => 'product'])
 @section('website-contents')
 @section('title', 'Products')
 @push('website-css')
