@@ -14,7 +14,7 @@ html {
    
 }
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
     line-height: 1.3;
 }
 a {
@@ -22,6 +22,71 @@ a {
 }
 a:hover {
     color: #745ba3;
+}
+.button-1-a {
+    display: inline-block;
+    margin: 0;
+    color: inherit;
+    text-decoration: none;
+    max-width: 100%;
+}
+.button-1 {
+    border-radius: 3px;
+    border-width: 2px;
+    border-color: rgb(0 163 193);
+    border-style: solid;
+    background: rgb(0 163 193);
+    color: rgb(255, 255, 255);
+    line-height: 1.3;
+    padding: 0.2rem 0.5rem;
+    box-shadow: 0 2px 1px rgb(0 0 0 / 10%), 0 1px 3px rgb(0 0 0 / 30%);
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all .3s;
+}
+.button-1:hover {
+    border-color: rgb(250, 250, 250);
+}
+.ubtn-hover {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    background-color: #fff;
+    border-radius: inherit;
+    box-sizing: border-box;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transition: all .3s;
+}
+.button-1:hover .ubtn-hover {
+    opacity: 1;
+    height: 260%;
+}
+.ubtn-data {
+    z-index: 3;
+    position: inherit;
+    display: block;
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    color: #fff;
+}
+.button-1:hover .ubtn-data {
+    color: rgb(0 163 193);
+}
+.ubtn:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all .3s;
+    transition: all .3s;
 }
 #typed{
     font-size: 24px;
@@ -381,6 +446,10 @@ section.py-5.about-section {
 .footer-botttom {
     background: #00a3c1;
     color: #fff;
+}
+
+.footer-content .contact-info li svg {
+    margin-right: 5px;
 }
 
 .clearfix a {

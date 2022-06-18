@@ -28,7 +28,7 @@
                         <strong>Category Name: {{ $product->category->name }}</strong><br>
                         <strong>Price: {{ $product->price }}Tk</strong><br>
                         <p class="mt-3">{{ $product->shortdes }}</p>
-                        <p>{!! $product->description !!}</p>
+                        <div style="text-align: justify">{!! $product->description !!}</div>
                     </div>
                    
                 </div>

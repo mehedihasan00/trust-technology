@@ -23,7 +23,7 @@
             <div class="col-12 pt-3 details-news">
                 <img class="float-end p-3" style="max-width: 100%; max-height: 300px" src="{{ asset($news->image) }}" alt="">
                 <strong class="text-justify">{{ $news->shortdetails }}</strong>
-                <p class="text-justify">{!! $news->description !!} </p>
+                <div class="text-justify">{!! $news->description !!} </div>
             </div>
     </div>
 </div>

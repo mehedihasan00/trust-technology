@@ -59,7 +59,7 @@
                 </a>
                 <a class="nav-link {{  ($pageName == 'contact' ? 'active' : '') }}" href="{{ route('contact.list') }}">
                     <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                    Contact List
+                    Message List
                 </a>
                 <a class="nav-link" href="{{ route('logout') }}">
                     <div class="sb-nav-link-icon"><i class="fa fa-power-off"></i></div>

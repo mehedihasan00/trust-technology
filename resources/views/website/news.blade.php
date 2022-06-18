@@ -23,14 +23,20 @@
                     </div>
                     <div class="card-body">
                         <ul class="list-unstyled d-flex mb-1">
-                            <li class="bloger-name"><a href="">BY, Jony Agro</a> </li>
+                            {{-- <li class="bloger-name"><a href="">BY, Jony Agro</a> </li> --}}
                             <li class="ms-auto"><span>{{ $item->date }}</span></li>
                         </ul>
                             <h4 class="mb-2">{{ $item->title }}</h4> 
                            {{-- <p> {!! Str::limit($item->description, 230, ' ...') !!} </p>              --}}
                            <p>{{ Str::limit($item->shortdetails, 108, ' ...')}}</p>
                            <div class="d-grid gap-2">
-                            <a class="btn read-more" href="{{ route('website.news-details', $item->slug) }}" type="button">Read More</a>
+                            {{-- <a class="btn read-more" href="{{ route('website.news-details', $item->slug) }}" type="button">Read More</a> --}}
+                            <a href="{{ route('website.news-details', $item->slug) }}" class="button-1-a">
+                                <button class="button-1 ubtn">
+                                    <span class="ubtn-hover"></span>
+                                    <span class="ubtn-data ubtn-text">Read More</span>
+                                </button>
+                            </a>
                           </div>
                     </div>
                 </div>

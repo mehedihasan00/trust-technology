@@ -68,26 +68,34 @@
                             <textarea class="form-control" name="message" aria-label="With textarea"></textarea>
                         </div> 
                     </div>
-                    <div class="d-inline pt-2">
+                    {{-- <div class="d-inline pt-2">
+
                         <button type="submit" class="about-btn">Submit</button>
-                    </div>
+
+                    </div> --}}
+                    <a type="submit" class="button-1-a">
+                        <button class="button-1 ubtn">
+                            <span class="ubtn-hover"></span>
+                            <span class="ubtn-data ubtn-text">Submit</span>
+                        </button>
+                    </a>
                 </form>
             </div>
 
             <div class="col-12 col-lg-4 col-md-4">
-                <div class="card p-4 mb-4 shadow text-center vertical-align">
+                <a href="tel: {{ $content->phone }}" class="card p-4 mb-4 shadow text-center vertical-align" style ="color: #000">
                     <div class="icon mb-3">
                         <i class="fas fa-phone"></i>
                     </div>
 
                     {{ $content->phone }}
-                </div>
-                <div class="card p-4 mb-4 shadow text-center vertical-align">
+                </a>
+                <a href="mailto: {{ $content->email }}" class="card p-4 mb-4 shadow text-center vertical-align" style ="color: #000">
                     <div class="icon mb-3">
                         <i class="fas fa-envelope"></i>
                     </div>
                     {{ $content->email }}
-                </div>
+                </a>
                 <div class="card p-4 shadow text-center vertical-align">
                     <div class="icon mb-3">
                         <i class="fas fa-map-marker-alt"></i>

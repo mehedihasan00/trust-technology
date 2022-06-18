@@ -79,8 +79,13 @@
                     <div class="col-md-6">
                         <div class="about-descriptio mt-2">
                             <h4 style="box-shadow: 2px 2px 2px 0px #808080b6">Welcome to Trust Label & Technology Ltd.</h4>
-                            <div class="mb-2"> {!!  Str::limit($about->description, 1150) !!} </div>
-                            <a href="{{ route('website.about') }}" class="about-btn">Read more</a>
+                            <div class="mb-2" style="min-height: 300px"> {!!  Str::limit($about->description, 1150) !!} </div>
+                            <a href="{{ route('website.about') }}" class="button-1-a">
+                                <button class="button-1 ubtn">
+                                    <span class="ubtn-hover"></span>
+                                    <span class="ubtn-data ubtn-text">Read More</span>
+                                </button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -211,14 +216,20 @@
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex mb-1">
-                                <li class="bloger-name"><a href="">BY, Jony Agro</a></li>
+                                {{-- <li class="bloger-name"><a href="">BY, Jony Agro</a></li> --}}
                                 <li class="ms-auto"><span>{{ $item->date }}</span></li>
                             </ul>
                                 <h4 class="mb-2">{{ Str::limit($item->title, 50, ' ...')}}</h4> 
                                {{-- <p> {!! Str::limit($item->description, 230, ' ...') !!} </p>              --}}
                                <p>{{ Str::limit($item->shortdetails, 108, ' ...')}}</p>
                                <div class="d-grid gap-2">
-                                <a class="btn read-more" href="{{ route('website.news-details', $item->slug) }}" type="button">Read More</a>
+                                {{-- <a class="btn read-more" href="{{ route('website.news-details', $item->slug) }}" type="button">Read More</a> --}}
+                                <a href="{{ route('website.news-details', $item->slug) }}" class="button-1-a">
+                                    <button class="button-1 ubtn">
+                                        <span class="ubtn-hover"></span>
+                                        <span class="ubtn-data ubtn-text">Read More</span>
+                                    </button>
+                                </a>
                               </div>
                         </div>
                     </div>
