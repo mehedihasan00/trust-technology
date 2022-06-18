@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ["pageName" => "updateProfile"])
 @section('title', 'Update Profile')
 @push('admin-css')
 @endpush    

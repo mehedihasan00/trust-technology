@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'product'])
 @section('title', 'Create product')
 @push('admin-css')
 @endpush    

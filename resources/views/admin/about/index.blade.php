@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'about'])
 @section('title', 'Update About')
 @push('admin-css')
 <link href="{{ asset('summernote/summernote-bs4.min.css') }}" rel="stylesheet">

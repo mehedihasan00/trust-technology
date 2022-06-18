@@ -3,7 +3,7 @@
 @section('title', 'Products')
 @push('website-css')
 @endpush
-<section class="pager">
+<section class="pager" style="background-image: linear-gradient(rgba(3, 1, 10, 0.5), rgba(3, 1, 10, 0.5)), url({{ '../'. $backimage->product }});">
     <div class="container pager-text py-5">
         <h3 class="text-center text-white fw-bold">Product</h3>
     </div>

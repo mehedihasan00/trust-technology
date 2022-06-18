@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'home'])
 @section('title', 'Dashboard')
 @section('admin-content')
 <main>

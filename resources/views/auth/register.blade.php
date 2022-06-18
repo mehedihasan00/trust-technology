@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'register'])
 @section('title', 'Create User')
 @push('admin-css')
 @endpush    

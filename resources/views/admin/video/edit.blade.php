@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ["pageName" => "video"])
 @section('title', 'Update Video')
 @push('admin-css')
 @endpush    

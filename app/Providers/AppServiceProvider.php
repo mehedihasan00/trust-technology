@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Models\CompanyProfile;
+use App\Models\BackBanner;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -25,5 +26,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         view()->share('content', CompanyProfile::first());
+        view()->share('backimage', BackBanner::first());
     }
 }

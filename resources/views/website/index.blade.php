@@ -78,7 +78,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="about-descriptio mt-2">
-                            <h4>Welcome to Northern IT</h4>
+                            <h4 style="box-shadow: 2px 2px 2px 0px #808080b6">Welcome to Trust Label & Technology Ltd.</h4>
                             <div class="mb-2"> {!!  Str::limit($about->description, 1150) !!} </div>
                             <a href="{{ route('website.about') }}" class="about-btn">Read more</a>
                         </div>
@@ -182,8 +182,8 @@
                 <div class="col-md-6">
                     <div class="row">
                             @foreach ($videos as $item)
-                            <div class="col-6">
-                                <iframe class="w-100" height="175" src="{{ $item->video }}">
+                            <div class="col-md-12">
+                                <iframe class="w-100" height="170" src="{{ $item->video }}">
                                 </iframe>
                             </div>
                              @endforeach
@@ -211,7 +211,7 @@
                         </div>
                         <div class="card-body">
                             <ul class="list-unstyled d-flex mb-1">
-                                <li class="bloger-name"><a href="">BY, Jony Agro</a> </li>
+                                <li class="bloger-name"><a href="">BY, Jony Agro</a></li>
                                 <li class="ms-auto"><span>{{ $item->date }}</span></li>
                             </ul>
                                 <h4 class="mb-2">{{ Str::limit($item->title, 50, ' ...')}}</h4> 

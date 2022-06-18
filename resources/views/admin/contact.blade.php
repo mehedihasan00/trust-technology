@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'contact'])
 @section('title', 'Create Committee')
 @push('admin-css')
 @endpush    

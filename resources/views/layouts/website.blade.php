@@ -27,15 +27,16 @@
         <div class="container-fluid my-container">
             <div class="row header-top"> 
             <div class="col-lg-6 col-md-6 col-12 vertical-align center-align">
-                <p class="mb-0 py-2" style="font-size:13px"><i class="fas fa-phone"></i> {{ $content->phone }} &nbsp;</p>
-                <p class="mb-0 py-2" style="font-size:13px "><i class="fas fa-envelope"></i> {{ $content->email }}</p>
+                <p class="mb-0 py-2 me-2" style="font-size:13px"><i class="fas fa-phone-alt me-1"></i> {{ $content->phone }} &nbsp;</p>
+                <p class="mb-0 py-2" style="font-size:13px "><i class="fas fa-envelope me-1"></i> {{ $content->email }}</p>
             </div>
             <div class="col-12 col-lg-6 col-md-6  vertical-align justify-content-end center-align">
-                <ul class="header-social d-flex ">
-                    <li><a class="" href="{{$content->facebook }}" title="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                    <li class="pl-2"><a class="" href="{{$content->twitter }}" title="twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                    <li class="pl-2"><a class="" href="{{$content->linkedin }}" title="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li class="pl-2"><a class="" href="{{$content->instagram }}" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                <ul class="header-social d-flex " style="font-size: 15px">
+                    <li><a class="pe-2" href="{{$content->facebook }}" title="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="pe-2"><a class="" href="{{$content->twitter }}" title="twitter" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li class="pe-2"><a class="" href="{{$content->linkedin }}" title="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li class="pe-2"><a class="" href="{{$content->instagram }}" title="instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                </ul>    
             </div>
         </div>
         </div>
@@ -128,7 +129,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-3 col-12 mb-4">
-                        <span class="text-white border-bottom">Flow us</span>
+                        <span class="text-white border-bottom">Follow us</span>
                             <div class="form-group subscribe">
                                 <ul class="footer-social d-flex mt-3">
                                     <li><a class="" href="{{$content->facebook }}" title="facebook" target="_blank"><i class="fab fa-facebook-f"></i></a></li>

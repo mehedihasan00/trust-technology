@@ -17,6 +17,7 @@ use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\Admin\CompanyProfileController;
 use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\VideoController;
+use App\Http\Controllers\Admin\BackBannerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -97,7 +98,9 @@ Route::group(['middleware' => ['auth']] , function(){
     // company profile 
     Route::get('company-profile', [CompanyProfileController::class, 'edit'])->name('company.edit');
     Route::put('company-profile/{company}', [CompanyProfileController::class, 'update'])->name('company.update');
-
+    //Background Banner
+    Route::get('back-banner', [BackBannerController::class, 'edit'])->name('back.banner.edit');
+    Route::put('back-banner/{backbanner}', [BackBannerController::class, 'update'])->name('back.banner.update');
     // Create user
     Route::get('/registration', [RegistrationController::class, 'index'])->name('register.create');
     Route::post('/registration', [RegistrationController::class, 'store'])->name('register.store');

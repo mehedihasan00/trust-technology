@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'profile'])
 @section('title', 'Create content')
 @push('admin-css')
 @endpush    

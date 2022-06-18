@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'category'])
 @section('title', 'Create Category')
 @push('admin-css')
 @endpush    

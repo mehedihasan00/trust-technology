@@ -1,4 +1,4 @@
-@extends('layouts.admin-master')
+@extends('layouts.admin-master', ['pageName' => 'gallery'])
 @section('title', 'Update Gallery')
 @push('admin-css')
 @endpush    
