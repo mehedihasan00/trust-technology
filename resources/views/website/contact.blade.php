@@ -8,7 +8,7 @@
     </div>
 </section>
 
-<section class="py-5">
+<section id="contact" class="contact py-5" style="font-family: 'barlow', sans-serif;">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-md-8 col-12 card p-5 shadow">
@@ -17,7 +17,7 @@
                 </div>
                 @if(Session('status'))
                 <div class="alert-success alert fw-bold p-2" role="alert">
-                    Submitted Your Message
+                    Your Message has been delivered!
                 </div>
                 @endif
                 <form action="{{ route('contact.store') }}" method="post">
@@ -53,7 +53,7 @@
                         @enderror
                        </div>
                        <div class="col-6">
-                        <span class="" >Subject</span>
+                        <span class="">Subject</span>
                         <input type="subject" class="form-control @error('subject') is-invalid @enderror" name="subject" value="{{ old('subject') }}" placeholder="Type Your subject" aria-describedby="basic-addon3" />
                         @error('subject')
                         <span class="invalid-feedback" role="alert">
@@ -83,20 +83,20 @@
             </div>
 
             <div class="col-12 col-lg-4 col-md-4">
-                <a href="tel: {{ $content->phone }}" class="card p-4 mb-4 shadow text-center vertical-align" style ="color: #000">
+                <a href="tel: {{ $content->phone }}" class="card p-4 mb-4 shadow text-center vertical-align" style ="color: rgb(22, 13, 13)">
                     <div class="icon mb-3">
                         <i class="fas fa-phone"></i>
                     </div>
 
                     {{ $content->phone }}
                 </a>
-                <a href="mailto: {{ $content->email }}" class="card p-4 mb-4 shadow text-center vertical-align" style ="color: #000">
+                <a href="mailto: {{ $content->email }}" class="card p-4 mb-4 shadow text-center vertical-align" style ="color: rgb(22, 13, 13)">
                     <div class="icon mb-3">
                         <i class="fas fa-envelope"></i>
                     </div>
                     {{ $content->email }}
                 </a>
-                <div class="card p-4 shadow text-center vertical-align">
+                <div class="card p-4 shadow text-center vertical-align" style="color: rgb(22, 13, 13)">
                     <div class="icon mb-3">
                         <i class="fas fa-map-marker-alt"></i>
                     </div>

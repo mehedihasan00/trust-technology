@@ -28,9 +28,10 @@ class HomeController extends Controller
         $product = Product::latest()->take(12)->get();
         $category = Category::get()->take(10);
         $categorylast = Category::get()->skip(10);
-        $videos = Video::where('status', 1)->skip(1)->take(4)->get();
-        $video = Video::where('status', 1)->where('status',1)->orderBy('created_at','DESC')->first();
-        return view('website.index', compact('sliders', 'committee','about', 'photo', 'news','product','video','videos','category','categorylast'));
+        // $videos = Video::where('status', 1)->skip(1)->take(4)->get();
+        // $video = Video::where('status', 1)->orderBy('created_at','DESC')->first();
+        $videos = Video::where('status', 1)->take(4)->get();
+        return view('website.index', compact('sliders', 'committee','about', 'photo', 'news','product','videos','category','categorylast'));
     }
 
     public function products(){

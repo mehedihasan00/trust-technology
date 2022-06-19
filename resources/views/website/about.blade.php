@@ -9,7 +9,7 @@
         <h3 class="text-center text-white fw-bold">About Us</h3>
     </div> 
 </section>
-<section id="about-us">
+<section id="about-us" class="about-us-single">
 <div class="container py-4">
     <div class="inner-page-header mt-3">
         <h4>About Us</h4>
@@ -18,9 +18,8 @@
         
         {{-- <div class="col-12 col-lg-12 col-md-12 pt-3" style="position: relative"> --}}
             <div class="col-12">
-                <img class src="{{ asset($about->image) }}" alt="" style="width: 40%; height: 300px; float: left; padding-right: 8px">
-                <div style="text-align: just
-                y">{!! $about->description !!}</div>
+                <img class src="{{ asset($about->image) }}" alt="">
+                <div class="description">{!! $about->description !!}</div>
             </div>
         {{-- </div> --}}
         {{-- <div class="col-12 col-lg-7 col-md-8">
@@ -29,7 +28,7 @@
             <div class="inner-page-header mt-4 ">
                 <h4>Our Mission & Vision</h4>
             </div>
-            <div>
+            <div class="mission">
                 {!! $about->mission !!}
             </div>
         </div>
@@ -37,7 +36,7 @@
             <div class="inner-page-header ">
                 <h4>Our Trams & Condition</h4>
             </div>
-            <div>
+            <div class="terms">
                 {!! $about->trams !!}
             </div>
         </div>

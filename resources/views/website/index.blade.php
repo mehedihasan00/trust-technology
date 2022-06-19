@@ -77,8 +77,9 @@
                         <img class="w-100" src="{{ asset($about->image) }}" alt="">
                     </div>
                     <div class="col-md-6">
-                        <div class="about-descriptio mt-2">
-                            <h4 style="box-shadow: 2px 2px 2px 0px #808080b6">Welcome to Trust Label & Technology Ltd.</h4>
+                        <div class="about-description mt-2">
+                            <h4>Welcome to Trust Label & Technology Ltd.</h4>
+                            <hr>
                             <div class="mb-2" style="min-height: 300px"> {!!  Str::limit($about->description, 1150) !!} </div>
                             <a href="{{ route('website.about') }}" class="button-1-a">
                                 <button class="button-1 ubtn">
@@ -106,7 +107,7 @@
                             <a href="{{ route('product.details', $item->id) }}"><img src="{{ asset($item->image) }}" alt=""  /></a>
                         </div>
                         <div>
-                            <a class="text-center fw-bold" href="{{ route('product.details', $item->id) }}">{{ $item->title }}</a>
+                            <a class="text-center fw-bold text-capitalize" href="{{ route('product.details', $item->id) }}">{{ $item->title }}</a>
                         </div>
                         <span class=" fw-bold">{{ $item->price }}Tk.</span>
                     </div>
@@ -169,32 +170,32 @@
     <section class="py-4 bg-light">
         <div class="container">
             <div class="section-title text-center">
-                <h2 class="mb-3">Video </h2>
+                <h2 class="mb-3">Videos </h2>
             </div>
             <div class="row ">
                 {{-- @foreach ($video as $item)
                     <iframe class="w-100" height="350" src="{{ $item->video }}">
                     </iframe>
                 @endforeach   --}}
-                @if ($video)
+                {{-- @if ($video)
                 <div class="col-md-6">
                     <iframe class="w-100" height="350" src="{{ $video->video }}">
                     </iframe>
                     
                 </div>  
-                @endif
-                @if($videos)
-                <div class="col-md-6">
-                    <div class="row">
-                            @foreach ($videos as $item)
-                            <div class="col-md-12">
-                                <iframe class="w-100" height="170" src="{{ $item->video }}">
+                @endif --}}
+                @foreach($videos as $item)
+                <div class="col-6 col-md-4 col-lg-3">
+                    {{-- <div class="row"> --}}
+                            {{-- @foreach ($videos as $item) --}}
+                            {{-- <div class="col-md-12"> --}}
+                                <iframe class="w-100" height="180" src="{{ $item->video }}">
                                 </iframe>
-                            </div>
-                             @endforeach
-                    </div>
+                            {{-- </div> --}}
+                             {{-- @endforeach --}}
+                    {{-- </div> --}}
                 </div> 
-                @endif
+                @endforeach
                 
             </div>
         </div>
